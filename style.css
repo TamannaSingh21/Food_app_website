@@ -1,0 +1,55 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --light:#FFFFFF;
+
+}
+.nav-link
+{
+    color: var(--light) !important;
+    margin-left: 25px;
+    padding: 35px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+@media(min-width:992px)
+{
+    .navbar-dark
+    {
+        position: absolute;
+        width: 100%;
+        top:0;
+        left:0;
+        background: transparent !important;
+    }
+    #navbarSupportedContent
+    {
+        margin-left: 300px;
+    }
+}
+
+
+.welcome
+{
+    background: url('images/bg5.jpg');
+    background-repeat: no-repeat;
+    
+}
+.welcome img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    animation: rot 10s linear infinite;
+}
+@keyframes rot 
+{
+    100%{
+        transform:  rotate(360deg);
+    }
+}
+.menustyle :hover
+{
+    background-color: #8686e6;
+}
